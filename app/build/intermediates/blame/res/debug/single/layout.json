@@ -4,6 +4,10 @@
         "source": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/src/main/res/layout/card.xml"
     },
     {
+        "merged": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/res/merged/debug/layout/result.xml",
+        "source": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/src/main/res/layout/result.xml"
+    },
+    {
         "merged": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
         "source": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_activity_chooser_view.xml"
     },
@@ -78,10 +82,6 @@
     {
         "merged": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_action_bar_title_item.xml"
-    },
-    {
-        "merged": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/res/merged/debug/layout/activity_result_display.xml",
-        "source": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/src/main/res/layout/activity_result_display.xml"
     },
     {
         "merged": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/res/merged/debug/layout/notification_action.xml",

@@ -55,12 +55,14 @@ public class API_Search extends Activity {
             String title = ((DatumAdapter) m_adapter).getItem(position).title();
             String text = ((DatumAdapter) m_adapter).getItem(position).text();
             String imageUrl = ((DatumAdapter) m_adapter).getItem(position).imageUrl();
+            String date = ((DatumAdapter) m_adapter).getItem(position).date();
 
             // create intent and add relevant data for the search item that was clicked
             Intent itemIntent = new Intent(API_Search.this, ResultDisplayActivity.class);
             itemIntent.putExtra("title", title);
             itemIntent.putExtra("text", text);
             itemIntent.putExtra("imageUrl", imageUrl);
+            itemIntent.putExtra("date", date);
 
             // start ResultDisplayActivity
             startActivity(itemIntent);
