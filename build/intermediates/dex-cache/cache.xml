@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0c2c74fc3a452d13a2fa84ce135ea151c8fc8712">
+        sha1="f1889b2f405be9e6674aa4507a6ccaaa6075ed4a">
         <dex dex="/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_ae83ba613a3454a5e4c479e355d002ab299e0d71/classes.dex" />
     </item>
     <item
@@ -111,11 +111,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/aw/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.3.2/d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27/picasso-2.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6b7f0093cec6c9faf65dbfd6a6a345d0ed25e27">
+        <dex dex="/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.3.2_4df9a2052577cec8c07296f79fbf153ca832b03a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="21225d930d3e6036862f9a1cadfe860e1c3e80f6">
+        sha1="46ce761b780c6e27b3e8fc349c0cd0a62db99c34">
         <dex dex="/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f50cee1bc407c14b8387ba02c186dcffae6e2450/classes.dex" />
     </item>
     <item

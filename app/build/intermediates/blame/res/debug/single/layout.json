@@ -80,6 +80,10 @@
         "source": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/abc_action_bar_title_item.xml"
     },
     {
+        "merged": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/res/merged/debug/layout/activity_result_display.xml",
+        "source": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/src/main/res/layout/activity_result_display.xml"
+    },
+    {
         "merged": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
         "source": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.1.0/res/layout/notification_action.xml"
     },

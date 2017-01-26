@@ -2845,10 +2845,10 @@
                     "file": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 90,
-                        "endColumn": 57,
-                        "endOffset": 143
+                        "startColumn": 1,
+                        "startOffset": 84,
+                        "endColumn": 54,
+                        "endOffset": 137
                     }
                 }
             },
@@ -2864,10 +2864,10 @@
                     "file": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 149,
-                        "endColumn": 55,
-                        "endOffset": 200
+                        "startColumn": 1,
+                        "startOffset": 140,
+                        "endColumn": 52,
+                        "endOffset": 191
                     }
                 }
             },
@@ -4346,10 +4346,10 @@
                     "file": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 55,
-                        "endColumn": 47,
-                        "endOffset": 98
+                        "startColumn": 1,
+                        "startOffset": 52,
+                        "endColumn": 44,
+                        "endOffset": 95
                     }
                 }
             },
@@ -4365,10 +4365,10 @@
                     "file": "/Users/aw/AndroidStudioProjects/APISearchAndroid/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 103,
-                        "endColumn": 41,
-                        "endOffset": 140
+                        "startColumn": 1,
+                        "startOffset": 97,
+                        "endColumn": 38,
+                        "endOffset": 134
                     }
                 }
             },

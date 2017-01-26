@@ -11,14 +11,12 @@ import com.android.volley.RequestQueue;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.*;
-
-import static android.widget.Toast.LENGTH_SHORT;
 
 public class API_Search extends Activity {
 
@@ -49,9 +47,24 @@ public class API_Search extends Activity {
         ((DatumAdapter) m_adapter).setOnItemClickListener(new DatumAdapter.DatumClickListener() {
             @Override
             public void onItemClick(int position, View v) {
-                String msg = "Item with ID: " + ((DatumAdapter) m_adapter).getItem(position).id();
-                Toast toast = Toast.makeText(self, msg, Toast.LENGTH_SHORT);
-                toast.show();
+//          String msg = "Item with ID: " + ((DatumAdapter) m_adapter).getItem(position).id();
+//          Toast toast = Toast.makeText(self, msg, Toast.LENGTH_SHORT);
+//          toast.show();
+
+            // grab data for search item that will be passed to the ResultDisplayActivity activity
+            String title = ((DatumAdapter) m_adapter).getItem(position).title();
+            String text = ((DatumAdapter) m_adapter).getItem(position).text();
+            String imageUrl = ((DatumAdapter) m_adapter).getItem(position).imageUrl();
+
+            // create intent and add relevant data for the search item that was clicked
+            Intent itemIntent = new Intent(API_Search.this, ResultDisplayActivity.class);
+            itemIntent.putExtra("title", title);
+            itemIntent.putExtra("text", text);
+            itemIntent.putExtra("imageUrl", imageUrl);
+
+            // start ResultDisplayActivity
+            startActivity(itemIntent);
+
             }
         });
 

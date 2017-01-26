@@ -5,33 +5,50 @@
     density="xxxhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="34606401505385"
+    timestamp="41692973433301"
     token="-1957290199977917189"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="187" />
+        duration="184" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="516" />
     <task
         name="instant-run-transform"
-        duration="138" />
+        duration="27" />
     <task
         name="verifier"
-        duration="32" />
+        duration="1" />
 
     <artifact
-        location="/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
-        timestamp="34606401505385"
+        timestamp="41388081257550"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="41506726432281"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/builds/debug/41506726432281/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="41692973433301"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>
