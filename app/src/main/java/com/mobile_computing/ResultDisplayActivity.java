@@ -16,8 +16,11 @@ public class ResultDisplayActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.result);
 
-    Intent intent = getIntent();
+    // create back button
+    //getActionBar().setDisplayHomeAsUpEnabled(true);
 
+    // get data from API_SEARCH activity
+    Intent intent = getIntent();
     String title = intent.getStringExtra("title");
     String text = intent.getStringExtra("text");
     String imageUrl = intent.getStringExtra("imageUrl");
@@ -41,6 +44,7 @@ public class ResultDisplayActivity extends AppCompatActivity {
     // set text in UI
     TextView textView4 = (TextView) layout.findViewById(R.id.textView4);
     textView4.setText(text);
+
 
   }
 }

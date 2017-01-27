@@ -12,6 +12,7 @@
 		android:theme="@style/AppTheme">
 		<activity
 			android:name=".API_Search"
+			android:launchMode="singleTop"
 			android:label="@string/app_name">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN"/>
@@ -19,7 +20,14 @@
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
-		<activity android:name=".ResultDisplayActivity">
+		<activity android:name=".ResultDisplayActivity"
+			android:parentActivityName=".API_Search" > <!-- Support back button function in app from result.xml page -->
+
+			<!-- Meta data for android 4.0 & earlier -->
+			<meta-data
+					android:name="android.support.PARENT_ACTIVITY"
+					android:value="com.mobile_computing.API_Search" />
+
 		</activity>
 	</application>
 

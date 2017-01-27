@@ -1,4 +1,4 @@
-#Thu Jan 26 17:33:18 EST 2017
+#Thu Jan 26 19:41:16 EST 2017
 base.0=/Users/aw/AndroidStudioProjects/APISearchAndroid/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_f50cee1bc407c14b8387ba02c186dcffae6e2450
 renamed.1=classes2.dex
 renamed.0=classes.dex
