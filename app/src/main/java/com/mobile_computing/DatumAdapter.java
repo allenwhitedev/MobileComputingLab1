@@ -79,19 +79,36 @@ public class DatumAdapter extends RecyclerView.Adapter<DatumAdapter.DataObjectHo
     }
 
     @Override
-    public void onBindViewHolder(final DataObjectHolder holder, int position) {
+    public void onBindViewHolder(final DataObjectHolder holder, final int position) {
         holder.title.setText(m_data.get(position).title());
         holder.date.setText(m_data.get(position).date());
         holder.img.setImageUrl(m_data.get(position).imageUrl(), imgLoad);
 
-        //holder.starButton.setColorFilter( Color.argb(125,125,125,255) );
+        // if item is already favorited, color star to show it is favorited
+        boolean isFavorite = m_data.get(position).isFavorite();
+        if ( isFavorite == true )
+            holder.starButton.setColorFilter( Color.BLUE );
+        else
+            holder.starButton.setColorFilter( Color.GRAY );
+
+
         // add click listener for adding favorites
         holder.starButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                holder.starButton.setColorFilter( Color.BLUE );
-                Toast.makeText(v.getContext(), "Item Favorited", Toast.LENGTH_LONG).show();
-
+                // if item is not already favorited, favorite it
+                if (  m_data.get(position).isFavorite() == false )
+                {
+                    holder.starButton.setColorFilter( Color.BLUE );
+                    Toast.makeText(v.getContext(), "Item Favorited", Toast.LENGTH_LONG).show();
+                    m_data.get(position).addFavorite();
+                }
+                else // if item is already favorited, un-favorite it
+                {
+                    holder.starButton.setColorFilter( Color.GRAY );
+                    Toast.makeText(v.getContext(), "Favorite Removed", Toast.LENGTH_LONG).show();
+                    m_data.get(position).addFavorite();
+                }
             }
         });
 

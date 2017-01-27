@@ -10,7 +10,7 @@ public class Datum {
     private String m_date;
     private String m_text;
     private String m_imageUrl;
-
+    private boolean m_isFavorite = false;
     // Constructor
     Datum(int id, String title, String date, String text, String imageUrl) {
         m_id       = id;
@@ -20,10 +20,20 @@ public class Datum {
         m_imageUrl = imageUrl;
     }
 
+    // add item as favorite
+    public void addFavorite()
+    {
+        if (!m_isFavorite)
+            m_isFavorite = true;
+        else
+            m_isFavorite = false;
+    }
+
     // Get operations
     public int id () { return m_id; }
     public String title() { return m_title; }
     public String date() { return m_date; }
     public String text() { return m_text; }
     public String imageUrl() { return m_imageUrl; }
+    public boolean isFavorite() { return m_isFavorite; };
 }
