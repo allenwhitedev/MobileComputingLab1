@@ -1,12 +1,15 @@
 package com.mobile_computing;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.NetworkImageView;
@@ -44,12 +47,14 @@ public class DatumAdapter extends RecyclerView.Adapter<DatumAdapter.DataObjectHo
         TextView title;
         TextView date;
         NetworkImageView img;
+        ImageButton starButton;
 
         public DataObjectHolder(View itemView) {
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.title);
             date  = (TextView) itemView.findViewById(R.id.date);
             img   = (NetworkImageView) itemView.findViewById(R.id.img);
+            starButton = (ImageButton) itemView.findViewById(R.id.starButton);
             Log.i(LOG_TAG, "Adding Listener");
             itemView.setOnClickListener(this);
         }
@@ -74,10 +79,23 @@ public class DatumAdapter extends RecyclerView.Adapter<DatumAdapter.DataObjectHo
     }
 
     @Override
-    public void onBindViewHolder(DataObjectHolder holder, int position) {
+    public void onBindViewHolder(final DataObjectHolder holder, int position) {
         holder.title.setText(m_data.get(position).title());
         holder.date.setText(m_data.get(position).date());
         holder.img.setImageUrl(m_data.get(position).imageUrl(), imgLoad);
+
+        //holder.starButton.setColorFilter( Color.argb(125,125,125,255) );
+        // add click listener for adding favorites
+        holder.starButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                holder.starButton.setColorFilter( Color.BLUE );
+                Toast.makeText(v.getContext(), "Item Favorited", Toast.LENGTH_LONG).show();
+
+            }
+        });
+
+
     }
 
     public void addItem(Datum datum, int index) {

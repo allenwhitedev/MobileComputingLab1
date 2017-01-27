@@ -42,6 +42,18 @@
                 android:layout_marginTop="10dp"
                 android:layout_below="@+id/title"
                 android:layout_toRightOf="@id/img"/>
+
+            <ImageButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              card_view:srcCompat="@android:drawable/btn_star"
+              android:src="@android:drawable/btn_star"
+              android:layout_centerVertical="true"
+              android:layout_alignParentEnd="true"
+              android:id="@+id/starButton"
+              android:background="@color/cardview_light_background"
+              android:onClick="addFavorite()"
+              android:elevation="0dp"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>
